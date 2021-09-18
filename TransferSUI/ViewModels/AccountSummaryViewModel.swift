@@ -10,12 +10,12 @@ import Foundation
 
 class AccountSummaryViewModel: ObservableObject {
     
-    private var _accounts = [Account]()
+    private var _accountsModel = [Account]()
     
-    var accounts: [AccountViewModel] = [AccountViewModel]()
+    @Published var accounts: [AccountViewModel] = [AccountViewModel]()
     
     var total: Double{
-        _accounts.map { $0.balance}.reduce(0,+)
+        _accountsModel.map { $0.balance}.reduce(0,+)
     }
     
     func getAllAccounts(){
@@ -25,9 +25,10 @@ class AccountSummaryViewModel: ObservableObject {
             switch result {
             case .success(let accountsResult):
                 if let accounts = accountsResult{
-                    self._accounts = accounts
-                    self.accounts = accounts.map(AccountViewModel.init)
-                    
+                    self._accountsModel = accounts
+                    DispatchQueue.main.async {
+                        self.accounts = accounts.map(AccountViewModel.init)
+                    }
                     print("Success \(accounts.count)")
                 }
                 

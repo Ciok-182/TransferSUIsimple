@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341B851426F5A78100AAF8B5 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341B851326F5A78100AAF8B5 /* CreateAccountRequest.swift */; };
+		341B851626F5A85500AAF8B5 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341B851526F5A85500AAF8B5 /* CreateAccountResponse.swift */; };
 		3428025A26F15BBC00126C8A /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428025926F15BBC00126C8A /* Double+Extensions.swift */; };
 		3428025C26F15BC900126C8A /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428025B26F15BC900126C8A /* URL+Extensions.swift */; };
 		3428025E26F15BD400126C8A /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428025D26F15BD400126C8A /* View+Extensions.swift */; };
 		3428026026F15C4400126C8A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428025F26F15C4400126C8A /* Account.swift */; };
 		3428026226F15D3700126C8A /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428026126F15D3700126C8A /* AccountService.swift */; };
 		3428026426F163D600126C8A /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428026326F163D600126C8A /* AccountSummaryViewModel.swift */; };
+		3428026626F1690300126C8A /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428026526F1690300126C8A /* AccountSummaryScreen.swift */; };
+		3428026826F16D1200126C8A /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428026726F16D1200126C8A /* AccountListView.swift */; };
 		34CD84E726F056C500F979A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84E626F056C500F979A3 /* AppDelegate.swift */; };
 		34CD84E926F056C500F979A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84E826F056C500F979A3 /* SceneDelegate.swift */; };
 		34CD84EB26F056C500F979A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84EA26F056C500F979A3 /* ContentView.swift */; };
@@ -22,12 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341B851326F5A78100AAF8B5 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
+		341B851526F5A85500AAF8B5 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		3428025926F15BBC00126C8A /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		3428025B26F15BC900126C8A /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		3428025D26F15BD400126C8A /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		3428025F26F15C4400126C8A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		3428026126F15D3700126C8A /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		3428026326F163D600126C8A /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
+		3428026526F1690300126C8A /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
+		3428026726F16D1200126C8A /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		34CD84E326F056C500F979A3 /* TransferSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CD84E626F056C500F979A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CD84E826F056C500F979A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				3428025F26F15C4400126C8A /* Account.swift */,
+				341B851326F5A78100AAF8B5 /* CreateAccountRequest.swift */,
+				341B851526F5A85500AAF8B5 /* CreateAccountResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -70,6 +80,7 @@
 		3428025526F15B8200126C8A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3428026526F1690300126C8A /* AccountSummaryScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -77,6 +88,7 @@
 		3428025626F15B8A00126C8A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3428026726F16D1200126C8A /* AccountListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,8 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341B851626F5A85500AAF8B5 /* CreateAccountResponse.swift in Sources */,
+				3428026826F16D1200126C8A /* AccountListView.swift in Sources */,
 				3428025A26F15BBC00126C8A /* Double+Extensions.swift in Sources */,
 				34CD84E726F056C500F979A3 /* AppDelegate.swift in Sources */,
+				3428026626F1690300126C8A /* AccountSummaryScreen.swift in Sources */,
 				3428025C26F15BC900126C8A /* URL+Extensions.swift in Sources */,
 				34CD84E926F056C500F979A3 /* SceneDelegate.swift in Sources */,
 				3428025E26F15BD400126C8A /* View+Extensions.swift in Sources */,
@@ -220,6 +235,7 @@
 				3428026226F15D3700126C8A /* AccountService.swift in Sources */,
 				34CD84EB26F056C500F979A3 /* ContentView.swift in Sources */,
 				3428026026F15C4400126C8A /* Account.swift in Sources */,
+				341B851426F5A78100AAF8B5 /* CreateAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
