@@ -71,4 +71,38 @@ class AccountService{
         
     }
     
+    func transferFounds(transferFounRequest: TransferFoundRequest, completion: @escaping (Result<TransferFoundResponse, NetworkError>) -> Void ){
+        
+        guard let url = URL.urlForTransferFounds() else {
+            return completion(.failure(.badUrl))
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONEncoder().encode(transferFounRequest)
+        
+        URLSession.shared.dataTask(with: request){data, response, error in
+            
+            guard let data = data, error == nil else {
+                return completion(.failure(.noData))
+            }
+            
+            let transferFoundResponse =  try? JSONDecoder().decode(TransferFoundResponse.self, from: data)
+            
+            if let transferFoundResponse = transferFoundResponse {
+                completion(.success(transferFoundResponse))
+            } else {
+                completion(.failure(.decodingError))
+            }
+            
+            
+            
+            
+        }.resume()
+        
+        
+    }
+    
 }
+

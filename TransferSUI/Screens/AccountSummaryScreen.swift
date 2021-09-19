@@ -29,7 +29,10 @@ struct AccountSummaryScreen: View {
         .onAppear{
             self.accountSummaryVM.getAllAccounts()
         }
-        .sheet(isPresented: $isPresented) {
+        .sheet(isPresented: $isPresented, onDismiss: {
+            self.accountSummaryVM.getAllAccounts()
+        }) {
+            
             AddAccountScreen()
         }
         

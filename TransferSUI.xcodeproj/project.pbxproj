@@ -19,6 +19,9 @@
 		3428026626F1690300126C8A /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428026526F1690300126C8A /* AccountSummaryScreen.swift */; };
 		3428026826F16D1200126C8A /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428026726F16D1200126C8A /* AccountListView.swift */; };
 		34A8E8D626F6B40D00217CEB /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8D526F6B40D00217CEB /* AddAccountScreen.swift */; };
+		34A8E8D826F7F83E00217CEB /* TransferFoundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8D726F7F83E00217CEB /* TransferFoundRequest.swift */; };
+		34A8E8DA26F7F92600217CEB /* TransferFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8D926F7F92600217CEB /* TransferFoundResponse.swift */; };
+		34A8E8DC26F7FD0000217CEB /* TransferFoundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8DB26F7FD0000217CEB /* TransferFoundsViewModel.swift */; };
 		34CD84E726F056C500F979A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84E626F056C500F979A3 /* AppDelegate.swift */; };
 		34CD84E926F056C500F979A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84E826F056C500F979A3 /* SceneDelegate.swift */; };
 		34CD84EB26F056C500F979A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84EA26F056C500F979A3 /* ContentView.swift */; };
@@ -40,6 +43,9 @@
 		3428026526F1690300126C8A /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
 		3428026726F16D1200126C8A /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		34A8E8D526F6B40D00217CEB /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddAccountScreen.swift; path = "TransferSUI/Preview Content/AddAccountScreen.swift"; sourceTree = SOURCE_ROOT; };
+		34A8E8D726F7F83E00217CEB /* TransferFoundRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundRequest.swift; sourceTree = "<group>"; };
+		34A8E8D926F7F92600217CEB /* TransferFoundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundResponse.swift; sourceTree = "<group>"; };
+		34A8E8DB26F7FD0000217CEB /* TransferFoundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundsViewModel.swift; sourceTree = "<group>"; };
 		34CD84E326F056C500F979A3 /* TransferSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CD84E626F056C500F979A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CD84E826F056C500F979A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 				3428025F26F15C4400126C8A /* Account.swift */,
 				341B851326F5A78100AAF8B5 /* CreateAccountRequest.swift */,
 				341B851526F5A85500AAF8B5 /* CreateAccountResponse.swift */,
+				34A8E8D726F7F83E00217CEB /* TransferFoundRequest.swift */,
+				34A8E8D926F7F92600217CEB /* TransferFoundResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 			children = (
 				3428026326F163D600126C8A /* AccountSummaryViewModel.swift */,
 				341B851726F5AA2B00AAF8B5 /* AddAccountViewModel.swift */,
+				34A8E8DB26F7FD0000217CEB /* TransferFoundsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -231,7 +240,10 @@
 			files = (
 				341B851626F5A85500AAF8B5 /* CreateAccountResponse.swift in Sources */,
 				34A8E8D626F6B40D00217CEB /* AddAccountScreen.swift in Sources */,
+				34A8E8DC26F7FD0000217CEB /* TransferFoundsViewModel.swift in Sources */,
+				34A8E8DA26F7F92600217CEB /* TransferFoundResponse.swift in Sources */,
 				3428026826F16D1200126C8A /* AccountListView.swift in Sources */,
+				34A8E8D826F7F83E00217CEB /* TransferFoundRequest.swift in Sources */,
 				3428025A26F15BBC00126C8A /* Double+Extensions.swift in Sources */,
 				34CD84E726F056C500F979A3 /* AppDelegate.swift in Sources */,
 				3428026626F1690300126C8A /* AccountSummaryScreen.swift in Sources */,

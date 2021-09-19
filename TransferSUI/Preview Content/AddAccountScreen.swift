@@ -32,11 +32,14 @@ struct AddAccountScreen: View {
                     self.addAccountVM.createAccount { success in
                         if success {
                             self.presentationMode.wrappedValue.dismiss()
+                            self.addAccountVM.errorMessage = ""
                         }
                     }
                 }
                 Spacer()
             }
+            
+            Text(self.addAccountVM.errorMessage)
         }
         .navigationBarTitle("Add Account")
         .embedInNavigationView()

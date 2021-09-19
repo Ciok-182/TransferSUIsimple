@@ -19,4 +19,8 @@ extension URL {
     static func urlForCreateAccounts() -> URL? {
         return URL(string: "https://coral-stealth-anglerfish.glitch.me/api/accounts")
     }
+    
+    static func urlForTransferFounds() -> URL? {
+        return URL(string: "https://coral-stealth-anglerfish.glitch.me/api/transfer")
+    }
 }
