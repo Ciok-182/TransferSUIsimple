@@ -22,6 +22,7 @@
 		34A8E8D826F7F83E00217CEB /* TransferFoundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8D726F7F83E00217CEB /* TransferFoundRequest.swift */; };
 		34A8E8DA26F7F92600217CEB /* TransferFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8D926F7F92600217CEB /* TransferFoundResponse.swift */; };
 		34A8E8DC26F7FD0000217CEB /* TransferFoundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8DB26F7FD0000217CEB /* TransferFoundsViewModel.swift */; };
+		34A8E8DE26F7FE7B00217CEB /* TransferFoundsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A8E8DD26F7FE7B00217CEB /* TransferFoundsScreen.swift */; };
 		34CD84E726F056C500F979A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84E626F056C500F979A3 /* AppDelegate.swift */; };
 		34CD84E926F056C500F979A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84E826F056C500F979A3 /* SceneDelegate.swift */; };
 		34CD84EB26F056C500F979A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD84EA26F056C500F979A3 /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 		34A8E8D726F7F83E00217CEB /* TransferFoundRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundRequest.swift; sourceTree = "<group>"; };
 		34A8E8D926F7F92600217CEB /* TransferFoundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundResponse.swift; sourceTree = "<group>"; };
 		34A8E8DB26F7FD0000217CEB /* TransferFoundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundsViewModel.swift; sourceTree = "<group>"; };
+		34A8E8DD26F7FE7B00217CEB /* TransferFoundsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFoundsScreen.swift; sourceTree = "<group>"; };
 		34CD84E326F056C500F979A3 /* TransferSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CD84E626F056C500F979A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CD84E826F056C500F979A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				3428026526F1690300126C8A /* AccountSummaryScreen.swift */,
 				34A8E8D526F6B40D00217CEB /* AddAccountScreen.swift */,
+				34A8E8DD26F7FE7B00217CEB /* TransferFoundsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				3428025E26F15BD400126C8A /* View+Extensions.swift in Sources */,
 				3428026426F163D600126C8A /* AccountSummaryViewModel.swift in Sources */,
 				3428026226F15D3700126C8A /* AccountService.swift in Sources */,
+				34A8E8DE26F7FE7B00217CEB /* TransferFoundsScreen.swift in Sources */,
 				34CD84EB26F056C500F979A3 /* ContentView.swift in Sources */,
 				3428026026F15C4400126C8A /* Account.swift in Sources */,
 				341B851826F5AA2B00AAF8B5 /* AddAccountViewModel.swift in Sources */,
