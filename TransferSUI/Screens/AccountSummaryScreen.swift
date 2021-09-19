@@ -11,6 +11,8 @@ struct AccountSummaryScreen: View {
     
     @ObservedObject private var accountSummaryVM = AccountSummaryViewModel()
     
+    @State private var isPresented: Bool = false
+    
     var body: some View {
         
         GeometryReader{ g in
@@ -27,6 +29,13 @@ struct AccountSummaryScreen: View {
         .onAppear{
             self.accountSummaryVM.getAllAccounts()
         }
+        .sheet(isPresented: $isPresented) {
+            AddAccountScreen()
+        }
+        
+        .navigationBarItems(trailing: Button("Add Account"){
+            self.isPresented = true
+        })
         .navigationTitle("Account Summary")
         .embedInNavigationView()
         
