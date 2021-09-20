@@ -45,6 +45,10 @@ struct TransferFoundsScreen: View {
                     self.transferFoundsVM.populateAccounts()
                 }
                 
+            Button("Submit transfer"){
+                
+            }.padding()
+                
                 .actionSheet(isPresented: $showSheet){
                     ActionSheet(title: Text("Transfer Founds"), message: Text("Choose an account"), buttons: acctionSheetButtons)
                 }
@@ -85,6 +89,15 @@ struct TransferFoundsAccountSelectionView: View {
             .foregroundColor(Color.white)
             .opacity(self.transferFoundsVM.fromAccount == nil ? 0.5 : 1)
             .disabled(self.transferFoundsVM.fromAccount == nil ? true : false)
+            
+            
+            TextField("Amount", text: self.$transferFoundsVM.amount)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            
+            
+            
+            
         }.padding()
         
     }
