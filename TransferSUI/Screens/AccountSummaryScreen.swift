@@ -26,7 +26,7 @@ struct AccountSummaryScreen: View {
                 AccountListView(accounts: accountSummaryVM.accounts)
                     .frame(height: g.size.height/2)
                 
-                Text("\(accountSummaryVM.total.formatAsCurrency())")
+                //Text("\(accountSummaryVM.total.formatAsCurrency())")
                 
                 Spacer()
                 

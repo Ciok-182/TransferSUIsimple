@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TransferFoundsScreen: View {
     
-    
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject private var transferFoundsVM = TransferFoundsViewModel()
     
     @State private var showSheet: Bool = false
@@ -35,26 +35,34 @@ struct TransferFoundsScreen: View {
     }
     
     var body: some View {
-        VStack {
-            AccountListView(accounts: transferFoundsVM.accounts)
-                .frame(height: 300)
-            
-            TransferFoundsAccountSelectionView(transferFoundsVM: transferFoundsVM, showSheet: $showSheet, isFromAccount: $isFromAccount)
-            Spacer()
-                .onAppear{
-                    self.transferFoundsVM.populateAccounts()
-                }
+        
+        ScrollView{
+            VStack {
+                AccountListView(accounts: transferFoundsVM.accounts)
+                    .frame(height: 200)
                 
-            Button("Submit transfer"){
+                TransferFoundsAccountSelectionView(transferFoundsVM: transferFoundsVM, showSheet: $showSheet, isFromAccount: $isFromAccount)
+                Spacer()
+                    .onAppear{
+                        self.transferFoundsVM.populateAccounts()
+                    }
                 
-            }.padding()
+                Text(self.transferFoundsVM.message ?? "")
+                
+                Button("Submit transfer"){
+                    transferFoundsVM.submitTransfer {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }.padding()
                 
                 .actionSheet(isPresented: $showSheet){
                     ActionSheet(title: Text("Transfer Founds"), message: Text("Choose an account"), buttons: acctionSheetButtons)
                 }
-            
+            }
         }.navigationTitle("Transfer Founds")
         .embedInNavigationView()
+        
+        
     }
 }
 
